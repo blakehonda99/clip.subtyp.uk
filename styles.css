@@ -75,6 +75,23 @@ h1 {
     float: left;
 }
 
+.sub-divider {
+    width: 100%;
+    margin-bottom: -8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddde7;
+    float: left;
+}
+
+.sub-divider h4 {
+    margin: 0;
+    margin: 4px 0px 4px 20px;
+    padding: 0;
+    font-weight: bold;
+    float: left;
+    color:rgba(0, 0, 0, 0.4)
+}
+
 /* Directory item styles */
 .directory-item {
     padding: 10px;
