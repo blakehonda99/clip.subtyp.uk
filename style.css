@@ -1,0 +1,132 @@
+/* Reset some default styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    text-align: center;
+    margin: 0, 5vh, 0, 5vh; /* Reduced from 10vh */
+    min-height: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+    margin: 20px;
+}
+
+.indexPage1 {
+    margin-bottom: 20vh;
+}
+
+header {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 2vh; /* Reduced from 5vh */
+    overflow-y: hidden;
+}
+
+nav {
+    background-color: #1E1E1E; /* Background color for the navbar */
+    padding: 1vh 0; /* Reduced from 2vh for top and bottom padding */
+}
+
+nav ul {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the list items horizontally */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 0.5vh; /* Reduced from 2vh */
+    margin-left: 0.5vh
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #FFF; /* Text color for links in the navbar */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2vh; /* Reduced from 4vh for font size */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    font-size: 4vh; /* Reduced from 9vh */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    transform: translateY(-1vh); /* Reduced from -2vh for slide-in effect */
+    animation: slideInTitle 0.5s ease-in-out forwards 0s; /* Delayed slide-in */
+}
+
+@keyframes slideInTitle {
+    0% { transform: translateY(-1vh); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+p {
+    font-size: 2vh; /* Reduced from 4vh for font size */
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    transform: translateY(1vh); /* Reduced from 2vh for slide-in effect */
+    animation: slideInText 0.5s ease-in-out forwards 0.3s; /* Delayed slide-in */
+}
+
+@keyframes slideInText {
+    0% { transform: translateY(-1vh); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Style the plan headings */
+.plan h3 {
+    background-color: #1E1E1E; /* Use a shade of the background color */
+    color: #FFF; /* Text color for plan headings */
+    padding: 10px; /* Add padding to the headings */
+    border-radius: 5px; /* Add border radius for a rounded look */
+    margin-bottom: 10px; /* Add space below each plan */
+    text-align: center; /* Center the text */
+    margin-top: 0px;
+    transform: translateY(-1vh); /* Reduced from -2vh for slide-in effect */
+    animation: slideInTitle 0.5s ease-in-out forwards 0s; /* Delayed slide-in */
+}
+
+/* Add a separator line between plans */
+.plan {
+    background-color: #FFF; /* Background color for plan boxes */
+    color: #333; /* Text color for plan details */
+    border-radius: 10px; /* Add border radius for a rounded look */
+    padding: 20px; /* Add padding around each plan */
+    margin-bottom: 20px; /* Add space between plans */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the plan details */
+.pricing-details {
+    margin-bottom: 20px; /* Add space below the plan details */
+}
+
+/* Style the pricing section */
+.pricing-price {
+    background-color: #007BFF; /* Use a distinct color for pricing */
+    color: #FFF; /* Text color for pricing */
+    padding: 2px; /* Add padding to pricing section */
+    border-radius: 5px; /* Add border radius for a rounded look */
+    text-align: center; /* Center the pricing text */
+    margin: 0px;
+}
+
+/* Footer */
+footer {
+    /* Leave the footer blank */
+}
